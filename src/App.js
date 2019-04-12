@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Front-End-Teste (Melhor Comunicação).
-          </p>
-        </header>
-      </div>
-    );
-  }
-}
+import Header from './components/Header';
+import Main from './pages/main';
+
+const App = () => (
+  <div className="App">
+    <Header />
+    <Main />
+  </div>
+);
 
 export default App;
