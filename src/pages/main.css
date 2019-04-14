@@ -25,7 +25,6 @@
     display: inline-block;
     font-size: 16px;
     margin-top: 10px;
-
 }
 
 .phone-form {
@@ -41,12 +40,13 @@
     justify-content: center;    
 }
 
-.phone-form #phone-form-box {
+#phone-form-box {
     display: inline-block;
     border: 1px solid #999;
     border-radius: 5px;
     padding: 20px;
     background-color: #F9F9F9;
+    width: 500px;
 }
 
 #phone-form-box input {
@@ -56,6 +56,20 @@
 #phone-form-box button {
     width: 100%;
     background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#phone-form-box button:disabled {
+    width: 100%;
+    background-color: #aaa;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -83,4 +97,8 @@ img {
 
 a {
     color: white;
+}
+
+.error {
+    background-color: red;
 }
