@@ -77,6 +77,14 @@ export default class Main extends Component {
         }
     }
 
+    deletePhone = async (id) => {
+        if (window.confirm('Tem certeza que deseja excluir esse item?')){
+            await api.delete(`/phones/${id}`);
+        }
+
+        this.loadPhones();
+    };
+
     componentDidMount(){
         this.loadPhones();
     }
@@ -126,6 +134,7 @@ export default class Main extends Component {
                             <strong>{phone.brand+' '+phone.model}</strong><br />
                             <strong className="price">R${phone.price}</strong>
                             <p>Modelo: {phone.model}, Marca: {phone.brand}, Cor: {phone.color}, Código: {phone.code}, Data de início da venda: {phone.startDate}, Data de fim da venda: {phone.endDate}</p>
+                            <button onClick={() => this.deletePhone(phone._id)}>EXCLUIR</button>
                         </article>
                     ))}
                 </div>

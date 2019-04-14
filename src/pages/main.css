@@ -15,6 +15,19 @@
     margin-bottom: 10px;
 }
 
+.phone-list button {
+    width: 200px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
 .phone-form {
     border: 1px solid #999;
     border-radius: 5px;
@@ -51,6 +64,7 @@
     display: inline-block;
     font-size: 16px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .input-bar {
